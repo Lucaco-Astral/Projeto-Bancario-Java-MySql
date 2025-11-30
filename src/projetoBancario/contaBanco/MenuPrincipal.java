@@ -208,7 +208,7 @@ public class MenuPrincipal extends Menu {
 
 		grid_Dir.gridx = 0;
 		grid_Dir.gridy = 0;
-		btnDeposito = new Botao("Deposito");
+		btnDeposito = new Botao("Depósito");
 		pnlDir.add(btnDeposito, grid_Dir);
 
 		grid_Dir.gridx = 0;
@@ -274,7 +274,7 @@ public class MenuPrincipal extends Menu {
 
 		grd.gridx = 0;
 		grd.gridy = 0;
-		btnDeposito = new Botao("Deposito");
+		btnDeposito = new Botao("Depósito");
 		pnlDir.add(btnDeposito, grd);
 
 		grd.gridy = 1;
@@ -391,8 +391,10 @@ public class MenuPrincipal extends Menu {
 			Image imgUser = userLogado.getImgUser().getImage().getScaledInstance(35, 35, Image.SCALE_SMOOTH);
 			btnUser = new JButton(new ImageIcon(imgUser));
 
+			borda = BorderFactory.createLineBorder(Cores.fundo(), 2);
+			btnUser.setBorder(borda);
+
 			btnUser.setBackground(null);
-			btnUser.setBorder(null);
 			btnUser.setPreferredSize(new Dimension(40, 40));
 
 			JLabel lblNomeUser = new Titulos(titulo);

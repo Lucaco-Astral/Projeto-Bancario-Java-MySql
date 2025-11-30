@@ -25,6 +25,7 @@ public class EditarUser {
 		}
 
 		usuario.setNome(nome);
+		usuarioDAO.atualizarUser(usuario);
 	}
 
 	public void editarEmail(String email) throws ExcecoesBanco {
@@ -41,5 +42,6 @@ public class EditarUser {
 		}
 
 		usuario.setEmail(email);
+		usuarioDAO.atualizarUser(usuario);
 	}
 }

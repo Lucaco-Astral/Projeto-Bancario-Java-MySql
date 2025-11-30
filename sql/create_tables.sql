@@ -7,7 +7,7 @@ CREATE TABLE usuario (
   adm boolean NOT NULL
 )
 
-CREATE TABLE contacorrente (
+CREATE TABLE contaCorrente (
   id_corrente int(11) NOT NULL AUTO_INCREMENT,
   id_user int(11) NOT NULL,
   limiteEspecial double NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE contacorrente (
   REFERENCES usuario (id_user)
 )
 
-CREATE TABLE contapoupanca (
+CREATE TABLE contaPoupanca (
   id_poupanca int(11) NOT NULL,
   id_user int(11) NOT NULL,
   reajusteMensal double NOT NULL,

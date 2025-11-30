@@ -50,8 +50,8 @@ public class UsuarioDAO {
 			sta.execute();
 
 			user = procurarUserEmail(user.getEmail());
-			correnteDAO.criarCorrenteID(2);
-			poupancaDAO.criarPoupancaID(2);
+			correnteDAO.criarCorrenteID(user.getId());
+			poupancaDAO.criarPoupancaID(user.getId());
 
 			sta.close();
 		} catch (SQLException e) {
